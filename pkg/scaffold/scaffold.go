@@ -10,6 +10,7 @@ import (
 	"text/template"
 
 	"github.com/gobuffalo/packr/v2"
+
 	"github.com/win5do/go-scaffold/pkg/logi"
 )
 

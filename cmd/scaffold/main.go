@@ -5,9 +5,10 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
+	"go.uber.org/zap"
+
 	"github.com/win5do/go-scaffold/pkg/logi"
 	"github.com/win5do/go-scaffold/pkg/scaffold"
-	"go.uber.org/zap"
 )
 
 var (
@@ -34,7 +35,7 @@ func newCmd() *cobra.Command {
 
 			err := scaffold.New().Generate(os.Args[0], args[0])
 			if err == nil {
-				log.Info("creat success, exec `make run` to start service.")
+				log.Info("create success, cd dir exec `make run` to start app")
 			}
 
 			return nil
